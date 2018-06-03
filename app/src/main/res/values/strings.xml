@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TubeTime</string>
+    <string name="error_permission_denied">This isnt\' going to go very well</string>
+    <string name="error_label_stationlist">There was a problem loading stations.</string>
+    <string name="info_arrival">%1$s \n%2$s \nArriving at %3$s</string>
+    <string name="info_station_distance">%dm away</string>
+    <string name="info_arrival_time_minutes">%d mins.</string>
+    <string name="loading_line_route">Loading route information</string>
+    <string name="loading_arrivals">Fetching arrival info for stations near you</string>
+
+    <string name="retry">Retry</string>
+</resources>

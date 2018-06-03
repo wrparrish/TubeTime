@@ -1,0 +1,7 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation kotlinStdLib
+    implementation rxJava
+    implementation javaxInject
+}

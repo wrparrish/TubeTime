@@ -1,0 +1,102 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.41'
+    ext.rxJavaVersion = '2.1.5'
+    ext.daggerVersion = '2.12'
+    ext.rxAndroidVersion = '2.0.1'
+    ext.timberVersion = '4.6.1'
+    ext.suasVersion = '1.1.0'
+    ext.androidSupportVersion = '27.1.0'
+    ext.retrofitVersion = '2.3.0'
+    ext.playServicesVersion = '15.0.1'
+    ext.constraintVersion = '1.1.0'
+    ext.JUNIT_VERSION = "4.12"
+    ext.MOCKITO_VERSION = "2.11.0"
+    ext.ROBOLECTRIC_VERSION = "3.4.2"
+    ext.MOCKITO_KOTLIN_VERSION = "1.5.0"
+    ext.okHttpVersion = '3.8.1'
+    ext.mosbyVersion = '3.0.1'
+    ext.retrofitVersion = '2.3.0'
+    ext.gsonVersion = '2.8.2'
+    ext.epoxyVersion ='2.9.0'
+    ext.threeTenAbpVersion ='1.0.5'
+    ext.rxLocationVersion = '1.0.4'
+
+
+
+
+    ext.androidSupportDesign = "com.android.support:design:$androidSupportVersion"
+    ext.androidSupportAnnotations = "com.android.support:support-annotations:$androidSupportVersion"
+    ext.androidSupportAppCompat = "com.android.support:appcompat-v7:$androidSupportVersion"
+    ext.androidSupportRecyclerView = "com.android.support:recyclerview-v7:$androidSupportVersion"
+    ext.androidSupportCardView = "com.android.support:cardview-v7:$androidSupportVersion"
+    ext.constraintLayout = "com.android.support.constraint:constraint-layout:$constraintVersion"
+    ext.playServicesLocation = "com.google.android.gms:play-services-location:$playServicesVersion"
+
+
+
+
+
+    ext.kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    ext.rxJava = "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    ext.dagger = "com.google.dagger:dagger:$daggerVersion"
+    ext.daggerCompiler = "com.google.dagger:dagger-compiler:$daggerVersion"
+    ext.epoxyCompiler = "com.airbnb.android:epoxy-processor:$epoxyVersion"
+    ext.javaxAnnotation = "javax.annotation:jsr250-api:1.0"
+    ext.javaxInject = "javax.inject:javax.inject:1"
+    ext.rxAndroid = "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    ext.timber = "com.jakewharton.timber:timber:$timberVersion"
+    ext.suas = "com.zendesk.suas:suas:$suasVersion"
+    ext.suasLogger = "com.zendesk.suas:suas-logger:$suasVersion"
+    ext.thunk = "com.zendesk.suas:suas-thunk:$suasVersion"
+    ext.epoxy = "com.airbnb.android:epoxy:$epoxyVersion"
+    ext.okHttpLoggingInterceptor = "com.squareup.okhttp3:logging-interceptor:$okHttpVersion"
+    ext.retrofit = "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    ext.retrofitAdapterRxJava = "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+    ext.retrofitConverterGson = "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    ext.gson = "com.google.code.gson:gson:$gsonVersion"
+    ext.mosby = "com.hannesdorfmann.mosby3:mvp:$mosbyVersion"
+    ext.threeTenAbp = "com.jakewharton.threetenabp:threetenabp:$threeTenAbpVersion"
+    ext.rxLocation = "com.patloew.rxlocation:rxlocation:$rxLocationVersion"
+
+
+    ext.JUNIT = "junit:junit:$JUNIT_VERSION"
+    ext.MOCKITO = "org.mockito:mockito-core:$MOCKITO_VERSION"
+    ext.ROBOLECTRIC = "org.robolectric:robolectric:$ROBOLECTRIC_VERSION"
+    ext.MOCKITOKOTLIN = "com.nhaarman:mockito-kotlin:$MOCKITO_KOTLIN_VERSION"
+
+
+
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url 'https://maven.fabric.io/public'
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:3.1.2'
+        classpath 'io.fabric.tools:gradle:1.25.1'
+    }
+}
+
+plugins {
+    id 'org.jmailen.kotlinter' version '1.11.1'
+}
+
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

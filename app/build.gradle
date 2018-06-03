@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.ruthlessprogramming.tubetime"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    testOptions {
+        unitTests {
+            unitTests.returnDefaultValues = true
+            includeAndroidResources = true
+        }
+    }
+}
+
+dependencies {
+
+    implementation project(':domain')
+    implementation project(':data')
+
+
+    kapt daggerCompiler
+    kapt epoxyCompiler
+
+    implementation kotlinStdLib
+    implementation timber
+    implementation rxJava
+    implementation rxAndroid
+    implementation dagger
+    implementation javaxAnnotation
+    implementation javaxInject
+    implementation suas
+    implementation threeTenAbp
+    implementation epoxy
+
+    implementation gson
+    implementation retrofit
+    implementation retrofitAdapterRxJava
+    implementation retrofitConverterGson
+    implementation  okHttpLoggingInterceptor
+    implementation mosby
+    implementation 'com.patloew.rxlocation:rxlocation:1.0.4'
+    implementation playServicesLocation
+
+
+
+    implementation androidSupportAppCompat
+    implementation androidSupportRecyclerView
+    implementation androidSupportCardView
+    implementation constraintLayout
+
+
+
+
+    testImplementation JUNIT
+    testImplementation MOCKITO
+    testImplementation MOCKITOKOTLIN
+    testImplementation ROBOLECTRIC
+}
