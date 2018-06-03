@@ -1,4 +1,4 @@
-[![codebeat badge]()](https://codebeat.co/projects/github-com-wrparrish-tubetime)
+[![codebeat badge](https://codebeat.co/badges/301136ae-f0fa-4e5d-802b-6b916dd3331f)](https://codebeat.co/projects/github-com-wrparrish-tubetime-master)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -19,7 +19,7 @@
 # TubeTime
 
 ## Project Quality
-TubeTime is evaluated by a static analysis / style tool called CodeBeat. The projects  score is available [here](https://codebeat.co/projects/github-com-wrparrish-tubetime)
+TubeTime is evaluated by a static analysis / style tool called CodeBeat. The projects  score is available [here](https://codebeat.co/projects/github-com-wrparrish-tubetime-master)
 
 
 ## Project Organization
