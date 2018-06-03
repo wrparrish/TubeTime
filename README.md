@@ -31,8 +31,6 @@ The Modules are as follows
 * app
 * Data
 * Domain
-`
-A module just for the presentation layer was  out of scope for this task.
 
 ###  app - Android Application Module
 This module  is a "delivery mechanism", it contains the necessary concrete implementations of the more abstract policies of the higher level modules.  It is responsible for creating all the various concretions that the more abstract lower layers  use. Since there is no separate module for presentation, the Model in our traditional  MVP setup also serves as a Redux Store.
