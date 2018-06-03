@@ -59,9 +59,9 @@ dependencies {
     implementation retrofit
     implementation retrofitAdapterRxJava
     implementation retrofitConverterGson
-    implementation  okHttpLoggingInterceptor
+    implementation okHttpLoggingInterceptor
     implementation mosby
-    implementation 'com.patloew.rxlocation:rxlocation:1.0.4'
+    implementation rxLocation
     implementation playServicesLocation
 
 

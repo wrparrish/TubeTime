@@ -1,3 +1,4 @@
+[![Build Status](https://www.bitrise.io/app/547bb746a3d13a33/status.svg?token=-RbxC75-RzYtbzY2jODakQ&branch=master)](https://www.bitrise.io/app/547bb746a3d13a33)
 [![codebeat badge](https://codebeat.co/badges/301136ae-f0fa-4e5d-802b-6b916dd3331f)](https://codebeat.co/projects/github-com-wrparrish-tubetime-master)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
